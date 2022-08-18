@@ -1,0 +1,50 @@
+/*Убираем внешние и внутренние отступы*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+
+	max-width: 100%;
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	background-color: var(--my-white);
+	color: var(--first-text-color);
+}
+
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.link {
+	text-decoration: none;
+}

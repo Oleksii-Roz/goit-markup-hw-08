@@ -1,0 +1,18 @@
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	&.header {
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+
+	&.hero {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	&.main-doing {
+		padding-top: 0;
+	}
+}

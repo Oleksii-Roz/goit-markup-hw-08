@@ -1,0 +1,101 @@
+/* ==========Фильтры на странице portfolio.html========== */
+.main-item {
+	flex-basis: calc((100% - 60px) / 3);
+}
+
+.main-filters__btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--first-text-color);
+	background: var(--main-bg);
+	padding: 6px 22px;
+
+	transition: box-shadow var(--transition-value), color var(--transition-value),
+		background-color var(--transition-value);
+
+	&:hover,
+	&:focus,
+	&.current {
+		color: var(--my-white);
+		background: var(--accent-color);
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}
+
+.main-filters {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.main-item-border__title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--first-text-color);
+
+	&.marging-bottom {
+		margin-bottom: 4px;
+	}
+}
+
+.main-item-border__text {
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--second-text-color);
+}
+
+.main-item-border {
+	background: var(--my-white);
+	border: 1px solid #eeeeee;
+	padding: 20px 24px;
+	border-top: none;
+}
+
+.main-item__link {
+	display: block;
+
+	transition: box-shadow var(--transition-value);
+
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
+
+	&:hover .main-item-box__overlay,
+	&:focus .main-item-box__overlay {
+		transform: translatey(0%);
+	}
+}
+
+.main-item-box__overlay-text {
+	font-size: 18px;
+	line-height: 1.55;
+	color: var(--my-white);
+	text-align: left;
+	padding: 63px 24px;
+	overflow: auto;
+}
+
+.main-item-box {
+	position: relative;
+	overflow: hidden;
+}
+
+.main-item-box__overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	background-color: rgba(33, 150, 243, 0.9);
+	padding: 0;
+	margin: 0;
+
+	transform: translatey(101%);
+	transition: transform var(--transition-value);
+}

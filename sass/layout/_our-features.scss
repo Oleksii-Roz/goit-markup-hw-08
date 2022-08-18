@@ -1,0 +1,51 @@
+/* ==========Наши основные особенности index.html========== */
+.main-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--first-text-color);
+
+	&.marging-bottom {
+		margin-bottom: 10px;
+	}
+}
+
+.main-text {
+	line-height: 1.71;
+	color: var(--second-text-color);
+}
+
+.main-features {
+	flex-basis: calc((100% - 90px) / 4);
+
+	&::before {
+		background: var(--main-bg);
+		border-radius: 4px;
+		display: block;
+		content: "";
+		width: auto;
+		height: 120px;
+		background-size: 70px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-origin: content-box;
+		margin-bottom: 30px;
+	}
+
+	&:nth-child(1)::before {
+		background-image: url(../images/key-features/antenna.svg);
+	}
+
+	&:nth-child(2)::before {
+		background-image: url(../images/key-features/clock.svg);
+	}
+
+	&:nth-child(3)::before {
+		background-image: url(../images/key-features/diagram.svg);
+	}
+
+	&:nth-child(4)::before {
+		background-image: url(../images/key-features/astronaut.svg);
+	}
+}

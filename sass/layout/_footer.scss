@@ -16,9 +16,7 @@
 .footer-nav__address {
 	line-height: 1.71;
 	color: var(--my-white);
-
 	transition: color var(--transition-value);
-
 	display: block;
 	width: 231px;
 
@@ -31,7 +29,6 @@
 .footer-nav__link {
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
-
 	transition: color var(--transition-value);
 
 	&:hover,
@@ -74,7 +71,6 @@ form.social-flex {
 	color: var(--my-white);
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
-
 	transition: color var(--transition-value), background-color var(--transition-value);
 
 	&:hover,
@@ -87,7 +83,6 @@ form.social-flex {
 .social-icon {
 	width: 20px;
 	height: 20px;
-
 	fill: currentColor;
 }
 
@@ -116,7 +111,6 @@ form.social-flex {
 input[placeholder="E-mail"].subscribe-input {
 	font-size: 16px;
 	line-height: 1.25;
-
 	display: flex;
 	letter-spacing: 0.03em;
 	color: var(--my-white);

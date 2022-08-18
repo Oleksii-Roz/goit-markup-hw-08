@@ -13,7 +13,6 @@
 	color: var(--first-text-color);
 	background: var(--main-bg);
 	padding: 6px 22px;
-
 	transition: box-shadow var(--transition-value), color var(--transition-value),
 		background-color var(--transition-value);
 
@@ -59,7 +58,6 @@
 
 .main-item__link {
 	display: block;
-
 	transition: box-shadow var(--transition-value);
 
 	&:hover,
@@ -95,7 +93,6 @@
 	background-color: rgba(33, 150, 243, 0.9);
 	padding: 0;
 	margin: 0;
-
 	transform: translatey(101%);
 	transition: transform var(--transition-value);
 }

@@ -8,12 +8,10 @@
 	height: 92px;
 	border: 1px solid var(--social-logo);
 	border-radius: 4px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--social-logo);
-
 	transition: color var(--transition-value), border var(--transition-value);
 
 	&:hover,

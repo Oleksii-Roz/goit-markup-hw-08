@@ -3,7 +3,6 @@
 	background-color: #c4c4c4;
 	max-width: 1600px;
 	height: 600px;
-
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
@@ -20,7 +19,6 @@
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--my-white);
-
 	width: 696px;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -32,14 +30,11 @@
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
-
 	color: var(--my-white);
 	background: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 	padding: 10px 32px;
 	align-items: center;
-
 	transition: background-color var(--transition-value);
 
 	&:hover,

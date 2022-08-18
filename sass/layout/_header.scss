@@ -57,10 +57,8 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--first-text-color);
-
 	padding-top: 32px;
 	padding-bottom: 32px;
-
 	transition: color var(--transition-value);
 
 	&:hover,
@@ -76,7 +74,6 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--second-text-color);
-
 	transition: color var(--transition-value);
 
 	&:hover,

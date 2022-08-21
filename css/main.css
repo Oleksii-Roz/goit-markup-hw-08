@@ -299,7 +299,7 @@ body {
     fill: currentColor;
   }
   .header-contact__item {
-    margin-bottom: 10px;
+    display: inline;
   }
   .header-contact__link {
     display: inline-flex;
@@ -352,7 +352,6 @@ body {
     margin-right: 10px;
   }
   .header-contact__item {
-    margin-bottom: 0;
     margin-right: 30px;
   }
   .header-contact__link {

@@ -60,7 +60,7 @@
 	}
 
 	.header-contact__item {
-		margin-bottom: 10px;
+		display: inline;
 	}
 
 	.header-contact__link {
@@ -79,11 +79,6 @@
 			fill: var(--accent-color);
 		}
 	}
-
-	// .header-contact__item {
-	// 	display: inline;
-	// 	margin-right: 30px;
-	// }
 
 	.header-nav__item {
 		& .header-nav__link {
@@ -132,7 +127,6 @@
 	}
 
 	.header-contact__item {
-		margin-bottom: 0;
 		margin-right: 30px;
 	}
 

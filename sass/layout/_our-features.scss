@@ -5,6 +5,7 @@
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--first-text-color);
+	text-align: center;
 
 	&.marging-bottom {
 		margin-bottom: 10px;
@@ -16,36 +17,67 @@
 	color: var(--second-text-color);
 }
 
-.main-features {
-	flex-basis: calc((100% - 90px) / 4);
-
-	&::before {
-		background: var(--main-bg);
-		border-radius: 4px;
-		display: block;
-		content: "";
-		width: auto;
-		height: 120px;
-		background-size: 70px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-origin: content-box;
-		margin-bottom: 30px;
+// 220 - max
+@media screen and (min-width: 200px) {
+	.section {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 
-	&:nth-child(1)::before {
-		background-image: url(../images/key-features/antenna.svg);
+	.main-features {
+		flex-basis: calc((100% - 0px) / 1);
+
+		&::before {
+			background: var(--main-bg);
+			border-radius: 4px;
+			display: block;
+			content: "";
+			width: auto;
+			height: 120px;
+			background-size: 70px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-origin: content-box;
+			margin-bottom: 30px;
+		}
+
+		&:nth-child(1)::before {
+			background-image: url(../images/key-features/antenna.svg);
+		}
+
+		&:nth-child(2)::before {
+			background-image: url(../images/key-features/clock.svg);
+		}
+
+		&:nth-child(3)::before {
+			background-image: url(../images/key-features/diagram.svg);
+		}
+
+		&:nth-child(4)::before {
+			background-image: url(../images/key-features/astronaut.svg);
+		}
+	}
+}
+
+// 768 - max
+@media screen and (min-width: 768px) {
+	.main-features {
+		flex-basis: calc((100% - 30px) / 2);
 	}
 
-	&:nth-child(2)::before {
-		background-image: url(../images/key-features/clock.svg);
+	.main-title {
+		text-align: start;
+	}
+}
+
+// 1200 - max
+@media screen and (min-width: 1200px) {
+	.section {
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 
-	&:nth-child(3)::before {
-		background-image: url(../images/key-features/diagram.svg);
-	}
-
-	&:nth-child(4)::before {
-		background-image: url(../images/key-features/astronaut.svg);
+	.main-features {
+		flex-basis: calc((100% - 90px) / 4);
 	}
 }

@@ -288,7 +288,7 @@ body {
     margin-left: auto;
   }
   .header-contact__icon {
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     margin-right: 10px;
   }

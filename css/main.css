@@ -740,6 +740,11 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .main-doing {
+    display: none;
+  }
+}
 /* ==========Наша команда index.html========== */
 .main-team-basis {
   flex-basis: calc((100% - 90px) / 4);

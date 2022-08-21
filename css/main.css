@@ -101,14 +101,21 @@ body {
     width: 1200px;
   }
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-.section.main-doing {
-  padding-top: 0;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section.main-doing {
+    padding-top: 0;
+  }
 }
-
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -667,10 +674,6 @@ body {
 }
 
 @media screen and (min-width: 200px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .main-features {
     flex-basis: calc((100% - 0px) / 1);
   }
@@ -709,10 +712,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .main-features {
     flex-basis: calc((100% - 90px) / 4);
   }

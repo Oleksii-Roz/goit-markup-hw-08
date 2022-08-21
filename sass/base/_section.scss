@@ -1,8 +1,19 @@
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+// 0 - 1199px
+@media screen and (max-width: 1199px) {
+	.section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
 
-	&.main-doing {
-		padding-top: 0;
+// 1200px - max
+@media screen and (min-width: 1200px) {
+	.section {
+		padding-top: 94px;
+		padding-bottom: 94px;
+
+		&.main-doing {
+			padding-top: 0;
+		}
 	}
 }

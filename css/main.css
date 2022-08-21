@@ -248,6 +248,12 @@ body {
 }
 
 /* ==========Header шапка сайта (WebStudio, Студия, Портфолио, Контакты, email, tel) index.html========== */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .header-nav__first {
     display: none;
@@ -266,12 +272,6 @@ body {
     padding-bottom: 16px;
   }
 }
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 @media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
@@ -356,58 +356,65 @@ body {
   }
   .header-contact__link {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.143;
   }
 }
 /* ==========Hero. Баннер, кнопка index.html========== */
-.hero {
-  background-color: #c4c4c4;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/1200/jpg/hero-1200.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 200px) {
+  .hero {
+    background-color: #c4c4c4;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/480/jpg/hero-480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 200px) and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-width: 200px) and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-width: 200px) and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/480/jpg/hero-480@2x.jpg);
+  }
+}
+@media screen and (min-width: 200px) {
+  .hero-text {
+    max-width: 360px;
+    width: 100%;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--my-white);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/768/jpg/hero-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/768/jpg/hero-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/1200/jpg/hero-1200.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/1200/jpg/hero-1200@2x.jpg);
   }
 }
-.hero-text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--my-white);
-  width: 696px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  margin: 0 auto;
-  color: var(--my-white);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  align-items: center;
-  transition: background-color var(--transition-value);
-}
-.hero-btn:hover, .hero-btn:focus {
-  background: #188ce8;
-}
-
 /* ==========Модальное окно (Hero. Баннер, кнопка)========== */
 .hero-modal-backdrop {
   position: fixed;

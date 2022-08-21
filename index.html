@@ -22,7 +22,7 @@
 
 	<body>
 		<!-- header шапка сайта (WebStudio, Студия, Портфолио, Контакты, email, tel)-->
-		<header class="header section">
+		<header class="header">
 			<div class="container header-flex">
 				<nav class="header-nav">
 					<a class="logo link" href="./index.html" lang="en">Web<span class="logo-header">Studio</span></a>
@@ -32,6 +32,11 @@
 						<li class="header-nav__item"><a class="header-nav__link link" href="#">Контакти</a></li>
 					</ul>
 				</nav>
+				<button type="button" class="mobile-menu-open" data-menu-open>
+					<svg class="mobile-menu-open__icon" width="40" height="40">
+						<use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+					</svg>
+				</button>
 				<ul class="list header-contact">
 					<li class="header-contact__item">
 						<a class="header-contact__link link" href="mailto:info@info@devstudio.com">
@@ -51,7 +56,44 @@
 					</li>
 				</ul>
 			</div>
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu__container">
+					<button class="mobile-menu__close-btn" data-menu-close>
+						<svg class="mobile-menu__close-icone" width="40" height="40">
+							<use href="./images/symbol-defs.svg#cross-close"></use>
+						</svg>
+					</button>
+					<ul class="list mobile-menu__menu">
+						<li class="mobile-menu__menu-item">
+							<a class="mobile-menu__menu-link current link" href="./index.html">Студія</a>
+						</li>
+						<li class="mobile-menu__menu-item">
+							<a class="mobile-menu__menu-link link" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="mobile-menu__menu-item">
+							<a class="mobile-menu__menu-link link" href="#">Контакти</a>
+						</li>
+					</ul>
+
+					<ul class="list mobile-menu__contact">
+						<li>
+							<a class="mobile-menu__contact-adress link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+						</li>
+						<li class="mobile-menu__contact-item">
+							<a class="mobile-menu__contact-mail link" href="mailto:info@info@devstudio.com"> info@devstudio.com </a>
+						</li>
+					</ul>
+
+					<ul>
+						<li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+						<li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+						<li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+						<li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
+
 		<!--Основное, тело, main-->
 		<main>
 			<!--Hero. Баннер, кнопка-->
@@ -599,6 +641,7 @@
 			</div>
 		</footer> -->
 
-		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
+		<!-- <script src="./js/modal.js"></script> -->
 	</body>
 </html>

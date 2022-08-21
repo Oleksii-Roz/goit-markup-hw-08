@@ -56,7 +56,6 @@ address {
 
 button {
   display: block;
-  margin: 0 auto;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -82,19 +81,29 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .section.hero {
   padding-top: 200px;
@@ -104,6 +113,49 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-value), visibility var(--transition-value);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu__contact {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -137,88 +189,118 @@ body {
 }
 
 /* ==========Header шапка сайта (WebStudio, Студия, Портфолио, Контакты, email, tel) index.html========== */
-.header {
-  background: var(--my-white);
-  border-bottom: 1px solid #ececec;
+@media screen and (max-width: 767px) {
+  .header-nav__first {
+    display: none;
+  }
+  .header-contact {
+    display: none;
+  }
+  .mobile-menu-open {
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+  }
+  .header {
+    background: var(--my-white);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
-
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
+  .header {
+    background: var(--my-white);
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #ececec;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav__first {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 88px;
+  }
+  .header-contact__icon {
+    max-width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  .header-contact__item {
+    margin-bottom: 10px;
+  }
+  .header-contact__link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition: color var(--transition-value);
+  }
+  .header-contact__link:hover, .header-contact__link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+  .header-nav__item .header-nav__link {
+    position: relative;
+  }
+  .header-nav__item > .current::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+  .header-nav__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--transition-value);
+  }
+  .header-nav__link:hover, .header-nav__link:focus, .header-nav__link.current {
+    color: var(--accent-color);
+  }
 }
-
-.header-nav__first {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .header-contact__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .header-contact__item {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .header-contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
-
-.header-contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header-contact__item {
-  display: inline;
-  margin-right: 30px;
-}
-
-.header-nav__item .header-nav__link {
-  position: relative;
-}
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.header-nav__item > .current::before {
-  content: "";
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  bottom: -2px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
-.header-nav__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--first-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--transition-value);
-}
-.header-nav__link:hover, .header-nav__link:focus, .header-nav__link.current {
-  color: var(--accent-color);
-}
-
-.header-contact__link {
-  display: inline-flex;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
-  transition: color var(--transition-value);
-}
-.header-contact__link:hover, .header-contact__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.header-contact__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 /* ==========Hero. Баннер, кнопка index.html========== */
 .hero {
   background-color: #c4c4c4;
@@ -256,6 +338,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  margin: 0 auto;
   color: var(--my-white);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

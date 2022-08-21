@@ -218,17 +218,23 @@ body {
     display: none;
   }
 }
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  color: var(--first-text-color);
+@media screen and (min-width: 200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    color: var(--first-text-color);
+  }
+  .title.marging-bottom {
+    margin-bottom: 30px;
+  }
 }
-.title.marging-bottom {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .title.marging-bottom {
+    margin-bottom: 50px;
+  }
 }
-
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;

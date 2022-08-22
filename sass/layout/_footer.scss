@@ -14,6 +14,19 @@
 
 // 768 - max
 @media screen and (min-width: 768px) {
+	.footer-nav {
+		margin-right: 165px;
+	}
+
+	.footer-wrapper {
+		display: flex;
+		align-items: baseline;
+	}
+
+	.footer-form {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 // 1200 - max
@@ -53,8 +66,17 @@
 
 .footer-all {
 	display: flex;
+	flex-direction: row;
 	align-items: baseline;
+
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
+
+// .footer-wrapper {
+// 	display: flex;
+// 	align-items: baseline;
+// }
 
 .footer-networks {
 	font-weight: 700;
@@ -73,10 +95,10 @@
 	}
 }
 
-.footer-form {
-	display: flex;
-	justify-content: center;
-}
+// .footer-form {
+// 	display: flex;
+// 	justify-content: center;
+// }
 
 .footer-subscribe {
 	margin-left: auto;

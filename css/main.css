@@ -881,6 +881,19 @@ body {
     margin-bottom: 8px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-right: 165px;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-form {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-nav {
     margin-right: 90px;
@@ -910,7 +923,10 @@ body {
 
 .footer-all {
   display: flex;
+  flex-direction: row;
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer-networks {
@@ -925,11 +941,6 @@ body {
 .footer-social-item:hover, .footer-social-item:focus {
   color: var(--my-white);
   background-color: var(--accent-color);
-}
-
-.footer-form {
-  display: flex;
-  justify-content: center;
 }
 
 .footer-subscribe {

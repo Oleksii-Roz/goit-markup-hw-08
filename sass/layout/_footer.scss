@@ -41,6 +41,10 @@
 		margin-bottom: 20px;
 		text-align: center;
 	}
+
+	.subscribe-input {
+		margin-bottom: 20px;
+	}
 }
 
 // 768 - max
@@ -54,9 +58,17 @@
 		align-items: baseline;
 	}
 
-	.footer-form {
-		display: flex;
-		justify-content: center;
+	.footer-networks {
+		margin-top: 0;
+	}
+
+	// .footer-form {
+	// 	display: flex;
+	// 	justify-content: center;
+	// }
+
+	.footer-subscribe {
+		margin-top: 60px;
 	}
 }
 
@@ -78,7 +90,19 @@
 
 	.footer-networks {
 		text-align: start;
-		margin-top: 0;
+	}
+
+	.footer-form {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-subscribe {
+		margin-left: auto;
+	}
+
+	.subscribe-input {
+		margin-bottom: 0;
 	}
 }
 
@@ -109,10 +133,6 @@
 		color: var(--my-white);
 		background-color: var(--accent-color);
 	}
-}
-
-.footer-subscribe {
-	margin-left: auto;
 }
 
 .subscribe-input {

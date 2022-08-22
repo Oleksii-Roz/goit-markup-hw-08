@@ -834,71 +834,93 @@
 			</section>
 		</main>
 		<!-- Подвал footer (адрес, почта, телефон, соц. сети)-->
-		<!-- <footer class="footer section">
+		<footer class="footer">
 			<div class="container footer-all">
-				<div class="footer-nav">
-					<a class="link logo footer-logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-					<address>
-						<ul class="list">
-							<li class="footer-nav__item">
+				<div class="footer-wrapper">
+					<div class="footer-nav">
+						<a class="link logo footer-logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+						<address>
+							<ul class="list">
+								<li class="footer-nav__item">
+									<a
+										class="link footer-nav__address"
+										href="https://goo.gl/maps/Uxr8CPiGGKussVzf7"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										м. Київ, пр-т Лесі Українки, 26
+									</a>
+								</li>
+
+								<li class="footer-nav__item">
+									<a class="link footer-nav__link" href="mailto:info@info@devstudio.com">info@devstudio.com</a>
+								</li>
+
+								<li class="footer-nav__item">
+									<a class="link footer-nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+
+					<div>
+						<p class="footer-networks">приєднуйтесь</p>
+						<ul class="social-flex list">
+							<li class="">
 								<a
-									class="link footer-nav__address"
-									href="https://goo.gl/maps/Uxr8CPiGGKussVzf7"
+									class="social-item footer-social-item"
+									href="https://www.instagram.com"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									м. Київ, пр-т Лесі Українки, 26
+									<svg class="social-icon">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
 								</a>
 							</li>
-
-							<li class="footer-nav__item">
-								<a class="link footer-nav__link" href="mailto:info@info@devstudio.com">info@devstudio.com</a>
+							<li class="">
+								<a
+									class="social-item footer-social-item"
+									href="https://twitter.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="social-icon">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
-
-							<li class="footer-nav__item">
-								<a class="link footer-nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+							<li class="">
+								<a
+									class="social-item footer-social-item"
+									href="https://www.facebook.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="social-icon">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="">
+								<a
+									class="social-item footer-social-item"
+									href="https://www.linkedin.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="social-icon">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
-				</div>
-
-				<div>
-					<p class="footer-networks">приєднуйтесь</p>
-					<ul class="social-flex list">
-						<li class="">
-							<a class="social-item" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="">
-							<a class="social-item" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="">
-							<a class="social-item" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="">
-							<a class="social-item" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					</div>
 				</div>
 
 				<div class="footer-subscribe">
 					<p class="footer-networks">Підпишіться на розсилку</p>
-					<form class="social-flex">
+					<form class="footer-form">
 						<input type="email" name="email" class="subscribe-input" placeholder="E-mail" required />
 						<button type="submit" class="hero-btn">
 							Підписатися
@@ -909,7 +931,7 @@
 					</form>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
 		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>

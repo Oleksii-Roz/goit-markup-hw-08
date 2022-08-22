@@ -19,7 +19,7 @@
 // 1200 - max
 @media screen and (min-width: 1200px) {
 	.footer-nav {
-		margin-right: 70px;
+		margin-right: 90px;
 	}
 
 	.footer-nav__item:not(:nth-child(3n)) {
@@ -27,18 +27,11 @@
 	}
 }
 
-.footer-nav {
-	margin-right: 70px;
-}
-
 .footer-nav__address {
 	line-height: 1.71;
 	color: var(--my-white);
-
 	transition: color var(--transition-value);
-
 	display: block;
-	width: 231px;
 
 	&:hover,
 	&:focus {

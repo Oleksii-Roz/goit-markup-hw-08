@@ -1,7 +1,30 @@
 /* ==========Постоянные клиенты index.html========== */
-.clients-basis {
-	flex-basis: calc((100% - 150px) / 6);
+
+// 220 - max
+@media screen and (min-width: 200px) {
+	.clients-basis {
+		flex-basis: calc((100% - 30px) / 2);
+	}
 }
+
+// 768 - max
+
+@media screen and (min-width: 768px) {
+	.clients-basis {
+		flex-basis: calc((100% - 60px) / 3);
+	}
+}
+
+// 1200 - max
+@media screen and (min-width: 1200px) {
+	.clients-basis {
+		flex-basis: calc((100% - 150px) / 6);
+	}
+}
+
+// .clients-basis {
+// 	flex-basis: calc((100% - 150px) / 6);
+// }
 
 .clients-basis__link {
 	width: 100%;

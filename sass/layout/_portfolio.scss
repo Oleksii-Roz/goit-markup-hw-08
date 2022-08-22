@@ -1,4 +1,5 @@
 /* ==========Фильтры на странице portfolio.html========== */
+
 // 220 - max
 @media screen and (min-width: 200px) {
 	.main-item {
@@ -20,10 +21,6 @@
 		flex-basis: calc((100% - 60px) / 3);
 	}
 }
-
-// .main-item {
-// 	flex-basis: calc((100% - 60px) / 3);
-// }
 
 .main-filters__btn {
 	font-family: inherit;
@@ -59,10 +56,7 @@
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--first-text-color);
-
-	&.marging-bottom {
-		margin-bottom: 4px;
-	}
+	margin-bottom: 4px;
 }
 
 .main-item-border__text {

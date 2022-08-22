@@ -1003,8 +1003,6 @@ button[type=submit].hero-btn {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--first-text-color);
-}
-.main-item-border__title.marging-bottom {
   margin-bottom: 4px;
 }
 

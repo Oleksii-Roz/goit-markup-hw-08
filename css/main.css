@@ -942,6 +942,7 @@ body {
   }
   .footer-subscribe {
     margin-left: auto;
+    margin-top: 0;
   }
   .subscribe-input {
     margin-bottom: 0;

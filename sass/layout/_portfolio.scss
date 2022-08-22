@@ -1,7 +1,29 @@
 /* ==========Фильтры на странице portfolio.html========== */
-.main-item {
-	flex-basis: calc((100% - 60px) / 3);
+// 220 - max
+@media screen and (min-width: 200px) {
+	.main-item {
+		flex-basis: calc((100% - 0px) / 1);
+	}
 }
+
+// 768 - max
+
+@media screen and (min-width: 768px) {
+	.main-item {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+}
+
+// 1200 - max
+@media screen and (min-width: 1200px) {
+	.main-item {
+		flex-basis: calc((100% - 60px) / 3);
+	}
+}
+
+// .main-item {
+// 	flex-basis: calc((100% - 60px) / 3);
+// }
 
 .main-filters__btn {
 	font-family: inherit;

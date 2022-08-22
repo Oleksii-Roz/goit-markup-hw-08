@@ -1,0 +1,34 @@
+.social-flex {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+form.social-flex {
+	gap: 0;
+}
+
+.social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+
+	color: var(--my-white);
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: color var(--transition-value), background-color var(--transition-value);
+
+	&:hover,
+	&:focus {
+		color: var(--my-white);
+		background-color: var(--accent-color);
+	}
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}

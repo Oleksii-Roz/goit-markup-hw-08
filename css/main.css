@@ -30,6 +30,38 @@
   gap: 30px;
 }
 
+.social-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+form.social-flex {
+  gap: 0;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--my-white);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: color var(--transition-value), background-color var(--transition-value);
+}
+.social-item:hover, .social-item:focus {
+  color: var(--my-white);
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /*Убираем внешние и внутренние отступы*/
 h1,
 h2,
@@ -755,11 +787,6 @@ body {
   .main-team-basis {
     flex-basis: calc((100% - 0px) / 1);
   }
-  .main-team-basis .main-team-social-item {
-    color: var(--social-logo);
-    background-color: var(--my-white);
-    overflow: hidden;
-  }
   .main-team-item {
     background: var(--my-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -803,6 +830,16 @@ body {
   text-align: center;
   color: var(--second-text-color);
   margin-bottom: 16px;
+}
+
+.main-team-social-item {
+  color: var(--social-logo);
+  background-color: var(--my-white);
+  overflow: hidden;
+}
+.main-team-social-item:hover, .main-team-social-item:focus {
+  color: var(--my-white);
+  background-color: var(--accent-color);
 }
 
 /* ==========Постоянные клиенты index.html========== */
@@ -901,38 +938,6 @@ body {
   text-transform: uppercase;
   color: var(--my-white);
   margin-bottom: 20px;
-}
-
-.social-flex {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-form.social-flex {
-  gap: 0;
-}
-
-.social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  color: var(--my-white);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: color var(--transition-value), background-color var(--transition-value);
-}
-.social-item:hover, .social-item:focus {
-  color: var(--my-white);
-  background-color: var(--accent-color);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
 }
 
 .footer-subscribe {

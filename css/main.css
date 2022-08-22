@@ -897,6 +897,7 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--my-white);
+    margin-top: 60px;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -929,6 +930,7 @@ body {
   }
   .footer-networks {
     text-align: start;
+    margin-top: 0;
   }
 }
 .footer-nav__address {

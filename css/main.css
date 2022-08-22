@@ -30,38 +30,6 @@
   gap: 30px;
 }
 
-.social-flex {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-form.social-flex {
-  gap: 0;
-}
-
-.social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  color: var(--my-white);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: color var(--transition-value), background-color var(--transition-value);
-}
-.social-item:hover, .social-item:focus {
-  color: var(--my-white);
-  background-color: var(--accent-color);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
 /*Убираем внешние и внутренние отступы*/
 h1,
 h2,
@@ -286,6 +254,34 @@ body {
 
 .logo-footer {
   color: var(--my-white);
+}
+
+.social-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+form.social-flex {
+  gap: 0;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--my-white);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: color var(--transition-value), background-color var(--transition-value);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* ==========Header шапка сайта (WebStudio, Студия, Портфолио, Контакты, email, tel) index.html========== */
@@ -938,6 +934,11 @@ body {
   text-transform: uppercase;
   color: var(--my-white);
   margin-bottom: 20px;
+}
+
+.footer-social-item:hover, .footer-social-item:focus {
+  color: var(--my-white);
+  background-color: var(--accent-color);
 }
 
 .footer-subscribe {

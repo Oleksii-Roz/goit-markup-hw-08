@@ -3,6 +3,12 @@
 @media screen and (min-width: 200px) {
 	.main-team-basis {
 		flex-basis: calc((100% - 0px) / 1);
+
+		.main-team-social-item {
+			color: var(--social-logo);
+			background-color: var(--my-white);
+			overflow: hidden;
+		}
 	}
 
 	.main-team-item {

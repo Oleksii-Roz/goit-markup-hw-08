@@ -755,6 +755,11 @@ body {
   .main-team-basis {
     flex-basis: calc((100% - 0px) / 1);
   }
+  .main-team-basis .main-team-social-item {
+    color: var(--social-logo);
+    background-color: var(--my-white);
+    overflow: hidden;
+  }
   .main-team-item {
     background: var(--my-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -837,18 +842,31 @@ body {
   }
 }
 /* ==========Footer Подвал (адрес, почта, телефон) index.html==========  */
-.footer {
-  background: var(--background-dark-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 200px) {
+  .footer {
+    background: var(--background-dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-nav__item:not(:nth-child(3n)) {
+    margin-bottom: 8px;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    margin-right: 70px;
+  }
+  .footer-nav__item:not(:nth-child(3n)) {
+    margin-bottom: 9px;
+  }
+}
 .footer-nav {
   margin-right: 70px;
-}
-
-.footer-nav__item:not(:nth-child(3n)) {
-  margin-bottom: 9px;
 }
 
 .footer-nav__address {
@@ -915,12 +933,6 @@ form.social-flex {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.main-team-social-item {
-  color: var(--social-logo);
-  background-color: var(--my-white);
-  overflow: hidden;
 }
 
 .footer-subscribe {

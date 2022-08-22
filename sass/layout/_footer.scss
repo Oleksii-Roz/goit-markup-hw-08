@@ -1,16 +1,34 @@
 /* ==========Footer Подвал (адрес, почта, телефон) index.html==========  */
-.footer {
-	background: var(--background-dark-color);
-	padding-top: 60px;
-	padding-bottom: 60px;
+// 220 - max
+@media screen and (min-width: 200px) {
+	.footer {
+		background: var(--background-dark-color);
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.footer-nav__item:not(:nth-child(3n)) {
+		margin-bottom: 8px;
+	}
+}
+
+// 768 - max
+@media screen and (min-width: 768px) {
+}
+
+// 1200 - max
+@media screen and (min-width: 1200px) {
+	.footer-nav {
+		margin-right: 70px;
+	}
+
+	.footer-nav__item:not(:nth-child(3n)) {
+		margin-bottom: 9px;
+	}
 }
 
 .footer-nav {
 	margin-right: 70px;
-}
-
-.footer-nav__item:not(:nth-child(3n)) {
-	margin-bottom: 9px;
 }
 
 .footer-nav__address {
@@ -62,10 +80,9 @@
 	}
 }
 
-.main-team-social-item {
-	color: var(--social-logo);
-	background-color: var(--my-white);
-	overflow: hidden;
+.footer-form {
+	display: flex;
+	justify-content: center;
 }
 
 .footer-subscribe {

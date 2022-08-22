@@ -262,10 +262,6 @@ body {
   gap: 10px;
 }
 
-form.social-flex {
-  gap: 0;
-}
-
 .social-item {
   display: flex;
   justify-content: center;
@@ -875,18 +871,26 @@ form.social-flex {
   }
 }
 /* ==========Footer Подвал (адрес, почта, телефон) index.html==========  */
-.footer {
-  background: var(--background-dark-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 200px) {
+  .footer {
+    background: var(--background-dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-nav__item:not(:nth-child(3n)) {
+    margin-bottom: 8px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    margin-right: 70px;
+  }
+  .footer-nav__item:not(:nth-child(3n)) {
+    margin-bottom: 9px;
+  }
+}
 .footer-nav {
   margin-right: 70px;
-}
-
-.footer-nav__item:not(:nth-child(3n)) {
-  margin-bottom: 9px;
 }
 
 .footer-nav__address {
@@ -928,10 +932,9 @@ form.social-flex {
   background-color: var(--accent-color);
 }
 
-.main-team-social-item {
-  color: var(--social-logo);
-  background-color: var(--my-white);
-  overflow: hidden;
+.footer-form {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-subscribe {

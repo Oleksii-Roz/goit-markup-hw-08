@@ -101,9 +101,10 @@
 	margin-top: 20px;
 
 	&::before {
-		display: block;
-		width: 16px;
-		height: 15px;
+		display: inline-block;
+		min-width: 16px;
+		min-height: 15px;
+
 		border: 1px solid var(--first-text-color);
 		content: "";
 		cursor: pointer;

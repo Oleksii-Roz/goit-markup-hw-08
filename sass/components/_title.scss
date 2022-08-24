@@ -1,8 +1,8 @@
 @media screen and (min-width: 200px) {
 	.title {
 		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.67;
+		font-size: 28px;
+		line-height: 1.18px;
 		text-align: center;
 		color: var(--first-text-color);
 
@@ -19,6 +19,9 @@
 // 1200 - max
 @media screen and (min-width: 1200px) {
 	.title {
+		font-size: 36px;
+		line-height: 1.67;
+
 		&.marging-bottom {
 			margin-bottom: 50px;
 		}

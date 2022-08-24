@@ -149,8 +149,6 @@
 	.modal-form-check-desc {
 		align-items: center;
 		justify-content: center;
-		font-size: 14px;
-		line-height: 1.714;
 	}
 }
 
@@ -161,5 +159,12 @@
 
 	.modal-form-input-desc {
 		line-height: 1.17;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.modal-form-check-desc {
+		font-size: 14px;
+		line-height: 1.714;
 	}
 }

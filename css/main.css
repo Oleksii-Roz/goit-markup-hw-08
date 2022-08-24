@@ -688,8 +688,6 @@ body {
   .modal-form-check-desc {
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.714;
   }
 }
 @media screen and (min-width: 768px) {
@@ -698,6 +696,12 @@ body {
   }
   .modal-form-input-desc {
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-check-desc {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 /* ==========Наши основные особенности index.html========== */

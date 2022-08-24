@@ -718,36 +718,35 @@ body {
   color: var(--second-text-color);
 }
 
-@media screen and (min-width: 200px) {
-  .main-features {
-    flex-basis: calc((100% - 0px) / 1);
-  }
-  .main-features::before {
-    background: var(--main-bg);
-    border-radius: 4px;
-    display: block;
-    content: "";
-    width: auto;
-    height: 120px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: content-box;
-    margin-bottom: 30px;
-  }
-  .main-features:nth-child(1)::before {
-    background-image: url(../images/key-features/antenna.svg);
-  }
-  .main-features:nth-child(2)::before {
-    background-image: url(../images/key-features/clock.svg);
-  }
-  .main-features:nth-child(3)::before {
-    background-image: url(../images/key-features/diagram.svg);
-  }
-  .main-features:nth-child(4)::before {
-    background-image: url(../images/key-features/astronaut.svg);
-  }
+.main-features {
+  flex-basis: calc((100% - 0px) / 1);
 }
+.main-features::before {
+  background: var(--main-bg);
+  border-radius: 4px;
+  display: block;
+  content: "";
+  width: auto;
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  margin-bottom: 30px;
+}
+.main-features:nth-child(1)::before {
+  background-image: url(../images/key-features/antenna.svg);
+}
+.main-features:nth-child(2)::before {
+  background-image: url(../images/key-features/clock.svg);
+}
+.main-features:nth-child(3)::before {
+  background-image: url(../images/key-features/diagram.svg);
+}
+.main-features:nth-child(4)::before {
+  background-image: url(../images/key-features/astronaut.svg);
+}
+
 @media screen and (min-width: 768px) {
   .main-features {
     flex-basis: calc((100% - 30px) / 2);
@@ -850,31 +849,32 @@ body {
 }
 
 /* ==========Постоянные клиенты index.html========== */
-@media screen and (min-width: 200px) {
-  .clients-basis {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  .clients-basis__link {
-    width: 100%;
-    height: 92px;
-    border: 1px solid var(--social-logo);
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--social-logo);
-    transition: color var(--transition-value), border var(--transition-value);
-  }
-  .clients-basis__link:hover, .clients-basis__link:focus {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-  }
-  .clients-basis__icon {
-    width: 106px;
-    height: 60px;
-    fill: currentColor;
-  }
+.clients-basis {
+  flex-basis: calc((100% - 30px) / 2);
 }
+
+.clients-basis__link {
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--social-logo);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-logo);
+  transition: color var(--transition-value), border var(--transition-value);
+}
+.clients-basis__link:hover, .clients-basis__link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-basis__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 @media screen and (min-width: 768px) {
   .clients-basis {
     flex-basis: calc((100% - 60px) / 3);

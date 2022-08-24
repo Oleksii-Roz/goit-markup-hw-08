@@ -1021,50 +1021,28 @@ button[type=submit].hero-btn {
 }
 
 /* ==========Фильтры на странице portfolio.html========== */
-@media screen and (min-width: 200px) {
-  .main-item {
-    flex-basis: calc((100% - 0px) / 1);
-  }
-  .main-filters {
-    display: flex;
-    gap: 8px;
-    row-gap: 15px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-  .main-item-box__overlay-text {
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--my-white);
-    text-align: left;
-    padding: 77px 24px;
-    overflow: auto;
-  }
+.main-item {
+  flex-basis: calc((100% - 0px) / 1);
 }
-@media screen and (min-width: 768px) {
-  .main-item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  .main-filters {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .main-item-box__overlay-text {
-    padding: 49px 24px 77px 24px;
-  }
+
+.main-filters {
+  display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-@media screen and (min-width: 1200px) {
-  .main-item {
-    flex-basis: calc((100% - 60px) / 3);
-  }
-  .main-filters {
-    margin-bottom: 50px;
-  }
-  .main-item-box__overlay-text {
-    padding: 63px 24px;
-  }
+
+.main-item-box__overlay-text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--my-white);
+  text-align: left;
+  padding: 77px 24px;
+  overflow: auto;
 }
+
 .main-filters__btn {
   font-family: inherit;
   font-weight: 500;
@@ -1133,4 +1111,28 @@ button[type=submit].hero-btn {
   margin: 0;
   transform: translatey(101%);
   transition: transform var(--transition-value);
+}
+
+@media screen and (min-width: 768px) {
+  .main-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .main-filters {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .main-item-box__overlay-text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .main-filters {
+    margin-bottom: 50px;
+  }
+  .main-item-box__overlay-text {
+    padding: 63px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

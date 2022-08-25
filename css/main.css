@@ -315,8 +315,8 @@ body {
   }
   .header {
     background: var(--my-white);
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #ececec;
   }
   .header-nav {
@@ -370,7 +370,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--first-text-color);
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 33px;
     transition: color var(--transition-value);
   }
   .header-nav__link:hover, .header-nav__link:focus, .header-nav__link.current {

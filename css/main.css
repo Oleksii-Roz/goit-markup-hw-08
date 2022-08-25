@@ -315,8 +315,8 @@ body {
   }
   .header {
     background: var(--my-white);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 19px;
+    padding-bottom: 19px;
     border-bottom: 1px solid #ececec;
   }
   .header-nav {
@@ -378,6 +378,10 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .header-contact {
     display: flex;
     align-items: center;

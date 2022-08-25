@@ -28,8 +28,6 @@
 
 	.header {
 		background: var(--my-white);
-		// padding-top: 16px;
-		// padding-bottom: 16px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #ececec;
@@ -44,10 +42,8 @@
 
 	.header {
 		background: var(--my-white);
-		// padding-top: 21px;
-		// padding-bottom: 21px;
-		padding-top: 24px;
-		padding-bottom: 24px;
+		padding-top: 19px;
+		padding-bottom: 19px;
 		border-bottom: 1px solid #ececec;
 	}
 
@@ -113,7 +109,6 @@
 		letter-spacing: 0.02em;
 		color: var(--first-text-color);
 		padding-top: 32px;
-		// padding-bottom: 32px;
 		padding-bottom: 33px;
 		transition: color var(--transition-value);
 
@@ -126,6 +121,11 @@
 }
 // 1200px - max
 @media screen and (min-width: 1200px) {
+	.header {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
 	.header-contact {
 		display: flex;
 		align-items: center;

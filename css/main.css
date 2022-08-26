@@ -694,14 +694,14 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .modal-title {
-    line-height: 1.15;
-  }
   .modal-form-input-desc {
     line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
   .modal-form-check-desc {
     justify-content: center;
     font-size: 14px;

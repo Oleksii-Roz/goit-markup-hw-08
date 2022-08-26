@@ -545,7 +545,7 @@ body {
     width: 300px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-modal {
     width: 528px;
   }

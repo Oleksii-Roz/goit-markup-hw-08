@@ -13,6 +13,8 @@
 		visibility: hidden;
 		pointer-events: none;
 		transition: opacity var(--transition-value), visibility var(--transition-value);
+
+		overflow-y: auto;
 	}
 
 	.mobile-menu.is-open {
